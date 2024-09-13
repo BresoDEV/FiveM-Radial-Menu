@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        background-color: rgb(208, 208, 208);
+    }
+
+    .centro {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        position: fixed;
+        border-radius: 100%;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    .opt {
+        background-color: rgba(0, 0, 0, 0.3);
+       cursor: pointer;
+        position: fixed;
+        border-radius: 100%;
+        border: 1px solid rgb(0, 0, 0);
+        display: none;
+        transition: all 0.2s ease;
+    }
+
+    .opt:hover {
+        scale: 1.2;
+    }
+    img{
+        max-width: 75px;
+        max-height: 75px;
+        min-width: 75px;
+        min-height: 75px;
+        mix-blend-mode:multiply;
+        background-color: transparent;
+    }
+</style>
+
+<body>
+    <div class="centro" id="centro"></div>
+    <div class="opt" id="1"><img src="Grenade-icon.webp" alt=""></div>
+    <div class="opt" id="2"><img src="Grenade-icon.webp" alt=""></div>
+    <div class="opt" id="3"><img src="Grenade-icon.webp" alt=""></div>
+    <div class="opt" id="4"><img src="Grenade-icon.webp" alt=""></div>
+    <div class="opt" id="5"><img src="Grenade-icon.webp" alt=""></div>
+    <div class="opt" id="6"><img src="Grenade-icon.webp" alt=""></div>
+    <div class="opt" id="7"><img src="Grenade-icon.webp" alt=""></div>
+    <div class="opt" id="8"><img src="Grenade-icon.webp" alt=""></div>
+</body>
+
+<script>
+    const espacamento = 150
+    const escalaObjs = 100
+    centro()
+
+
+
+
+
+    document.getElementById('centro').addEventListener('mouseenter', () => {
+        _1()
+        _2()
+        _3()
+        _4()
+        _5()
+        _6()
+        _7()
+        _8()
+    })
+
+
+    function _8() {
+        document.getElementById('8').style.display = 'block'
+        const largura = document.getElementById('8').offsetWidth / 2
+        const altura = document.getElementById('8').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('8').style.left = (telaX - largura)-(espacamento)+largura + 'px'
+        document.getElementById('8').style.top = (telaY - altura)-(espacamento/2)-(altura) + 'px'
+
+    }
+
+    //ok
+    function _6() {
+        document.getElementById('6').style.display = 'block'
+        const largura = document.getElementById('6').offsetWidth / 2
+        const altura = document.getElementById('6').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('6').style.left = (telaX - largura)-(espacamento)+largura + 'px'
+        document.getElementById('6').style.top = (telaY - altura)+(espacamento/2)+(altura) + 'px'
+
+    }
+
+    
+
+    //ok
+    function _4() {
+        document.getElementById('4').style.display = 'block'
+        const largura = document.getElementById('4').offsetWidth / 2
+        const altura = document.getElementById('4').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('4').style.left = (telaX - largura)+(espacamento)-largura + 'px'
+        document.getElementById('4').style.top = (telaY - altura)+(espacamento/2)+(altura) + 'px'
+
+    }
+
+
+
+    //ok
+    function _2() {
+        document.getElementById('2').style.display = 'block'
+        const largura = document.getElementById('2').offsetWidth / 2
+        const altura = document.getElementById('2').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('2').style.left = (telaX - largura)+(espacamento)-largura + 'px'
+        document.getElementById('2').style.top = (telaY - altura)-(espacamento/2)-(altura) + 'px'
+
+    }
+
+
+    //ok
+    function _7() {
+        document.getElementById('7').style.display = 'block'
+        const largura = document.getElementById('7').offsetWidth / 2
+        const altura = document.getElementById('7').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('7').style.left = (telaX - (largura * 2) - espacamento) + 'px'
+        document.getElementById('7').style.top = (telaY - altura) + 'px'
+
+    }
+
+
+
+
+    //ok
+    function _5() {
+        document.getElementById('5').style.display = 'block'
+        const largura = document.getElementById('5').offsetWidth / 2
+        const altura = document.getElementById('5').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('5').style.left = (telaX - largura) + 'px'
+        document.getElementById('5').style.top = (telaY + espacamento) + 'px'
+
+    }
+
+
+
+    //ok
+    function _3() {
+        document.getElementById('3').style.display = 'block'
+        const largura = document.getElementById('3').offsetWidth / 2
+        const altura = document.getElementById('3').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('3').style.left = (telaX + espacamento) + 'px'
+        document.getElementById('3').style.top = (telaY - altura) + 'px'
+
+    }
+
+
+    //ok
+    function _1() {
+        document.getElementById('1').style.display = 'block'
+        const largura = document.getElementById('1').offsetWidth / 2
+        const altura = document.getElementById('1').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+        document.getElementById('1').style.left = (telaX - largura) + 'px'
+        document.getElementById('1').style.top = (telaY - (altura * 2) - espacamento) + 'px'
+
+    }
+
+
+    //ok
+    function centro() {
+        const largura = document.getElementById('centro').offsetWidth / 2
+        const altura = document.getElementById('centro').offsetHeight / 2
+        const telaX = window.innerWidth / 2
+        const telaY = window.innerHeight / 2
+
+        for (let i = 0; i < 10; i++) {
+            if (document.getElementById(i)) {
+                document.getElementById('centro').style.left = (telaX - largura) + 'px'
+                document.getElementById('centro').style.top = (telaY - altura) + 'px'
+                document.getElementById(i).style.left = (telaX - largura) + 'px'
+                document.getElementById(i).style.top = (telaY - altura) + 'px'
+            }
+        }
+
+
+    }
+</script>
+
+</html>
